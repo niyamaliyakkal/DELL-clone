@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root {
+    --shadow-color: rgba(0,42,88,.08);
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    display: block;
+}
+/* navbar */
+header{
+    padding-bottom:0.3rem ;
+}
+.headertop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerlogo{
+    padding:0 1.2rem;
+}
+.headerlogo img{
+    width:100%;
+    object-fit: cover;
+}
+.searchbar{
+    padding: 1rem;
+    position: relative;
+}
+.searchbar input{
+    align-items: center;
+    border-radius: 2px;
+    border:1px solid rgb(172, 166, 166);
+    /* height: 32px; */
+    max-width: 612px;
+    width: 100%;
+    padding: 5px 98px 5px 16px;
+}
+.searchbar input::placeholder{
+    color: #6e6e6e;
+    font-style: normal;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.searchbar input:focus{
+    border: 1px solid grey;
+    outline: none;
+}
+.search-btns{
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.search-cancel{
+    background: url(images/cancel.svg) ;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:1.5rem;
+    height: 30px;
+    width: 30px;
+    border:none;
+    right:3rem;
+    display: none;
+}
+.search-submit{
+    background: url(images/search.svg);
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:1.5rem;
+    height: 30px;
+    width: 30px;
+    border:none;
+    right:1rem;
+}
+.toprightsection{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 3rem 0 5rem;
+}
+.toprightsection img{
+    height: 16px;
+    width: 16px;
+}
+.toprightbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0.5rem;
+}
+.toprightbuttons span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #636363;;
+}
+.downarrow img{
+    height:.6rem;
+    width: 0.7rem;
+    object-fit: fill;
+}
+.toprightbuttons:hover .downarrow{
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}
+
+/* headerbottom */
+.headerbottom{
+ padding: 0 4rem;
+}
+.hbheadings{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 2rem; */
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.hbheadings a{
+    font-size:0.9rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #636363;
+    padding: 12px 16px 14px 16px;
+    cursor: pointer;
+    /* justify-content: center; */
+    line-height: 1rem;
+}
+.dropdown-center button{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-weight:400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #636363;
+    padding: 12px 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 1rem;
+}
+.dropdown-center button:hover{
+    border-radius: 0%;
+    border-style: outset;
+    background-color: rgba(95, 158, 160, 0.212);
+    border-bottom: 1px solid rgba(29, 29, 29, 0.61);
+}
+.nav-link:hover{
+    border-radius: 0%;
+    background-color: rgba(95, 158, 160, 0.212);
+    border-bottom: 1px solid rgba(29, 29, 29, 0.61);
+}
+
+.dropdown-center button:hover .downarrow{
+    transform: rotate(180deg);
+    transition: 0s ease-in-out;
+}
+.hbdropdowns{
+    display: flex;
+    justify-content: space-between;
+    word-wrap:break-word;
+    gap:0.5rem;
+}
+.dropdown-menu {
+    border-radius:0%;
+}
+.headerbottomline{
+    height: 2px;
+    width: 100vw;
+    background-color: transparent;
+}
+/* main section */
+.carousel-item{
+    position: relative;
+}
+.carousel-item img{
+    width: 100vw;
+}
+.mainsecblurspace{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    background-color: rgb(255 255 255 / 51%);
+    backdrop-filter: blur(50px);
+    padding-right: 5%;
+    padding-left: 10%;
+}
+.infoicon img{
+    height: 1.2rem;
+    width:1.2rem;
+    object-fit: cover;
+    display: none;
+}
+.mainsecblurspace h2{
+    font-size: 1.25rem;
+    font-weight: 450;
+    line-height: 1.75rem;
+    margin-bottom:.5rem;
+    color: #000;
+}
+.doingis{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #000;
+}
+.mainsecblurspace h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #000;
+}
+.buttons{
+    display: flex;
+    gap:1.5rem;
+
+}
+.buttons .btn{
+    border-radius: 0%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.8rem 1rem;
+    line-height: 1.2rem;
+}
+#mainsecbutton2:hover{
+    background-color: rgba(255, 255, 255, 0.158);
+}
+/* bootstrap main sec */
+.carousel-item img{
+    width: 100vw;
+}
+#mainsecslider2{
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+}
+#mainsecslider2 h2{
+    color: white;
+}
+#mainsecslider2 .doingis{
+    color: white;
+}
+#mainsecslider2 h3{
+    color: white;
+}
+#mainsecbutton22{
+    color: white;
+}
+#mainsecbutton22:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+#mainsecbutton21:hover{
+    background-color:transparent;
+    color: white;
+}
+/* grid section */
+.gridsection{
+    padding: 1.5rem 9rem;
+    background-color: #0a0e14;
+    width: 100vw;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.grid-item{
+    position: relative;
+}
+.gridcontainer img{
+    width: 100%;
+    background: linear-gradient(147deg, #839db4, #d2d2d2 100%);
+}
+.gridbutton button{
+    padding: 0.5rem;
+    font-weight: 500;
+    background-color:#0a0e14 ;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0%;
+}
