@@ -30,6 +30,7 @@ header{
 .headerlogo img{
     width:100%;
     object-fit: cover;
+    color: #000;
 }
 .searchbar{
     padding: 1rem;
@@ -293,4 +294,81 @@ header{
     border: none;
     position: absolute;
     top: 0%;
+}
+/* foryou */
+.foryousection{
+    padding: 1.5rem 9rem;
+    background-color: #1d2c3b;
+}
+.foryouheading h2{
+    color: white;
+    font-weight: 300;
+    font-size:2rem;
+    line-height: 2.5rem;
+    padding:2rem 0;
+}
+.flexcontainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.flexcontainer h3{
+    padding: 0%;margin: 0%;
+    color: white;
+    font-weight: 400;
+    font-size:2rem;
+    line-height: 2.5rem;
+}
+.topflexitem{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.flexitem{
+    padding: 1rem;
+    background-color:rgba(245, 246, 247, .1);
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#firstflexitem{
+    width: 24rem;
+}
+.lapandtext{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap:1rem;
+}
+.lapandtext img{
+    height: 72px;
+    width: 100px;
+}
+.flexitem p{
+    margin: 0%;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+    color: white;
+}
+.flexitem a{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.7rem;
+    color: white;
+    text-decoration: none;
+}
+.flexitem a img{
+    height: 1rem;
+    width: 1rem;
+}
+#flexthirditem{
+    width: 18rem;
 }
