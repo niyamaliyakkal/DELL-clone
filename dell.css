@@ -470,6 +470,7 @@ header{
     height: 2rem;
 }
 /* video section */
+
 .outter.hero-video{
     width:100%;
     height:100%;
@@ -484,7 +485,7 @@ header{
   .hero-video {
     
   .video-container {
-    height:35rem;
+    height:34rem;
     width:100%;
     position: relative;
     overflow: hidden;
@@ -632,3 +633,236 @@ header{
         text-decoration: underline;
       }
   }
+  /* long section */
+.long{
+    background-color: #1d2c3b;
+    color: #fff;
+    padding: 4rem 9rem;
+}
+.longone{
+    display: flex;
+    justify-content: space-between;
+}
+.lgoneleft h3{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+}
+.lgoneleft h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+    padding-top: 8px !important;
+    padding-bottom: 4px !important;
+}
+.lgoneleft p{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+}
+.lgcard{
+    width: 33rem;
+    height: 16.5rem;
+    background-color:rgba(245, 246, 247, 0.1);
+    padding: 0.5rem 20px 20px;
+    color: #fff;
+}
+.lgcard h4{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.lgflexcard{
+    display: flex;
+}
+.cardleft{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width:  33.33333333%;
+}
+.cardleft img{
+    width: 9.25rem;
+    height: 4.75rem;
+    padding: 0.5rem 0 0;
+}
+.cardbadge span{
+    padding: .125rem calc(.5rem - 1px);
+    color: #436f00;
+    border: 1px solid #9bc438;
+    background-color: #e9f5ce;
+    border-radius: .75rem;
+    height: 1.5rem;
+    font-size: .75rem;
+    margin-left: 0.5rem;
+    /* padding: .375rem calc(.75rem - 1px); */
+}
+.cardright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cardright h3{
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.cardright h4{
+    font-size: 1rem;
+    font-weight:450;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+}
+.cardright button{
+    border-radius: 2px;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    padding: .4375rem .9375rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #0672cb;
+    border-color: #0672cb;
+    color: #fff;
+}
+/* long section two */
+.longtwo{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.longtwo a{
+    text-decoration: none;
+}
+.long2card{
+    background-color: rgba(245, 246, 247, 0.1);
+    justify-content:flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+    height: 9.8rem;
+    width: 12.3rem;
+    padding: 1rem 0;
+}
+.imagecontainer{
+    height:45%;
+}
+.long2card img{
+    height: 4rem;
+    width: 4rem;
+}
+.long2card p{
+    color: #fff;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: 450;
+}
+/* long3 */
+.long3{
+    text-align: right;
+    position: relative;
+}
+.long3 img{
+    width: 39.6rem;
+    height: 37.5rem;
+    object-fit: cover;
+}
+.long3card{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    translate: 0 -50%;
+    background-color:#002a58;
+    height: 20rem;
+    width: 32.21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem;
+}
+.long3card h1{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+.long3card h2{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+}
+.long3card a{
+    text-decoration: none; 
+}
+.l3buttons{
+    display: flex;
+    gap:1rem;
+    justify-content: space-between;
+}
+.long3card #button1{
+    background-color: #fff;
+    border-color: #fff;
+    color: #0e0e0e;
+    border-radius: 2px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .6875rem 1.1875rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    width:12.5rem;
+    font-weight: 500;
+}
+.long3card #button1:hover{
+    background-color:transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.long3card #button2{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .6875rem 1.1875rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 500;
+    width:16rem;
+}
+.long3card #button2:hover{
+    background-color:#fff;
+    color: #0e0e0e;
+}
+.l3cardimg{
+    height: 50%;
+}
+.l3cardimg img{
+    width: 2.5rem;
+    height: 3rem;
+    object-fit: cover;
+}
+.l3cards{
+    display: flex;
+    padding: 0 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.l3carditem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
