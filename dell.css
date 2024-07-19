@@ -487,6 +487,7 @@ header{
   .video-container {
     height:34rem;
     width:100%;
+    filter: brightness(0.8);
     position: relative;
     overflow: hidden;
     @media (max-width: 767px) {
